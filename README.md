@@ -25,9 +25,6 @@ You can copy your progress into a simple code like:
 2. Paste the code.
 3. Your game will resume at that level.
 
----
-
-## 📂 File Structure
 
 
 
