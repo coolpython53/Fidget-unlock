@@ -18,3 +18,16 @@ A colorful, interactive fidget game with **250 completely unique toys**. Each fi
 
 You can copy your progress into a simple code like:
 
+---
+### How to use a save code:
+
+1. Click **Load Save Code** in the game.
+2. Paste the code.
+3. Your game will resume at that level.
+
+---
+
+## 📂 File Structure
+
+
+
