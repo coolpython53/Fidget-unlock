@@ -6,7 +6,27 @@
   <!-- Load the font -->
   <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
 </head>
-<body>this is text</body>
+<body>
+  <div id="fidgetContainer"></div>
+</body>
+
+<script>
+  const container = document.getElementById("fidgetContainer");
+
+function loadFidget(level) {
+  fetch(`fidgets/fidget${level}.html`)   // get fidget HTML
+    .then(res => res.text())
+    .then(html => {
+      container.innerHTML = html;        // display it on the page
+
+      // load fidget JS so it works
+      const script = document.createElement('script');
+      script.src = `fidgets/fidget${level}.js`;
+      document.body.appendChild(script);
+    });
+}
+
+</script>
 <!-- Load the main.js -->
 <script src="scripts/main.js"></script>
 </html>
